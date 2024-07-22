@@ -45,7 +45,7 @@ Every action-related method work as it follows:
 ### HTTP protocol
 HTTP request protocol is implemented with the help of sockets. To request, update and delete data from the server `GET`, `POST` & `DELETE` methods are used.
 - **register**: 
-```json lines
+```py
 POST /api/v1/tema/auth/register HTTP/1.1
 Host: 34.246.184.49
 Content-Type: application/json
@@ -55,7 +55,7 @@ Content-Length: 38
 ```
 
 - **login**:
-```json lines
+```py
 POST /api/v1/tema/auth/login HTTP/1.1
 Host: 34.246.184.49
 Content-Type: application/json
@@ -66,7 +66,7 @@ Content-Length: 38
 HTTP response from server contains a session cookie that is stored in its corresponding attribute while the program runs.
 
 - **access**: 
-```json lines
+```py
 GET /api/v1/tema/library/access HTTP/1.1
 Host: 34.246.184.49
 Cookie: connect.sid=s%3AuAHUePO_ndfL6jfbpalzR7BEq07jxzIi.ucbnWjM6xVHLoy3QVoHPPVtZJYzfvs9Mqqw7zyTkXT8; Path=/; HttpOnly
